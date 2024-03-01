@@ -39,9 +39,7 @@ git에서 변수 문법 사용하기
 git remote add 변수명 원격저장소주소
 ```
 
-이 오류는 로컬 저장소의 브랜치가 원격 저장소의 브랜치보다 이전 커밋을 가리키고 있어서 발생합니다. 이를 해결하기 위해서는 먼저 로컬 브랜치를 원격 브랜치에 통합해야 합니다.
-또는 먼저 로컬 저장소의 변경 사항을 가져와서 로컬 브랜치를 업데이트하고, 그 다음에 다시 푸시합니다.
+현재 브랜치의 끝 부분이 원격 저장소의 대응하는 브랜치보다 뒤쳐져 있을 때
 ```
-git pull https://github.com/wvssm/TIL.git main
-git push https://github.com/wvssm/TIL.git main
+git pull 원격저장소주소 로컬브랜치명 --force
 ```
